@@ -37,7 +37,7 @@ const CustomerRegisterPage = () => {
 
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/users/register/customer',
+        '/api/users/register/customer',
         formData
       );
       localStorage.setItem('token', res.data.token);

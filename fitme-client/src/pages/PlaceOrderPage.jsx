@@ -62,7 +62,7 @@ const PlaceOrderPage = () => {
                 if (localStorage.token) {
                     setAuthToken(localStorage.token);
                 }
-                const res = await axios.get('http://localhost:5000/api/users/tailors'); 
+                const res = await axios.get('/api/users/tailors'); 
                 const foundTailor = res.data.find(t => t._id === tailorId);
                 
                 if (foundTailor) {
@@ -136,7 +136,7 @@ const PlaceOrderPage = () => {
             };
             
             const res = await axios.post(
-                `http://localhost:5000/api/orders/${tailorId}`,
+                `/api/orders/${tailorId}`,
                 payload
             );
 

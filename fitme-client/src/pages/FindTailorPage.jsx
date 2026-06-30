@@ -62,7 +62,7 @@ const FindTailorPage = () => {
             }
 
             try {
-                const res = await axios.get('http://localhost:5000/api/users/tailors');
+                const res = await axios.get('/api/users/tailors');
                 setTailors(res.data);
             } catch (err) {
                 console.error(err);

@@ -88,7 +88,7 @@ const TailorRegisterPage = () => {
       };
 
       const res = await axios.post(
-        'http://localhost:5000/api/users/register/tailor',
+        '/api/users/register/tailor',
         newTailor,
         { headers: { 'Content-Type': 'application/json' } }
       );

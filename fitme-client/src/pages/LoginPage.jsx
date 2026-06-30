@@ -27,7 +27,7 @@ const LoginPage = () => {
     
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/users/login',
+        '/api/users/login',
         formData,
         { headers: { 'Content-Type': 'application/json' } }
       );

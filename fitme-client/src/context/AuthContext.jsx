@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
         }
 
         try {
-            const res = await axios.get('http://localhost:5000/api/auth');
+            const res = await axios.get('/api/auth');
             setAuthState(prevAuthState => ({ // Use functional update form for safer state updates
                 ...prevAuthState,
                 isAuthenticated: true,
