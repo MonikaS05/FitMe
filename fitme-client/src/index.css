@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* This applies our new custom blue/slate colors */
+  @apply bg-light-bg dark:bg-dark-bg text-gray-900 dark:text-gray-100;
+  
+  /* This makes color changes feel smooth */
+  @apply transition-colors duration-300;
+}
